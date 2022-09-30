@@ -180,8 +180,11 @@ margin-right: 50px;
 /* start main */
 .main-banner {
   background-color: var(--color-banner);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/main-baner/Img\ \(1\)-min.jpg);
   padding-top: 215px;
   padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-list-page {
@@ -250,6 +253,21 @@ margin-right: 30px;
   width: 270px;
 }
 
+.item-page-bg{
+  background-color: var(--color-gray);
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.item-page-svg{
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 70px;
+}
+
 .title-page {
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -306,6 +324,11 @@ margin-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.social-list{
+  display: flex;
+}
+
 /* end main */
 
 /* start footer */
