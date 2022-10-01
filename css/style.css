@@ -374,7 +374,7 @@ fill:var(--color-white);
 .partner-list-item{
   border: 1px solid var(--color-svg);
   border-radius: 4px;
-  padding: 10px;
+  padding: 16px;
   width: 170px;
   display: flex;
   justify-content: center;
@@ -387,10 +387,18 @@ fill:var(--color-white);
   margin-right: 30px;
 }
 
+.partner-list-icon use{
+  fill: var(--color-svg);  
+}
 
-/* end main */
+.partner-list-icon use:hover,
+.partner-list-icon use:focus{
+  fill: var(--color-primary-hover);
+}
 
-/* start footer */
+/* end main */  
+
+  /* start footer */
 .footer {
   background-color: var(--color-banner);
   padding-top: 60px;
@@ -420,6 +428,23 @@ fill:var(--color-white);
 .addres-street {
   color: var(--color-white);
 }
+
+.social-text{
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;      
+}
+
+.footer-item{
+  margin-right: 70px;
+}
+
+.footer-list{
+  display: flex;
+}
+
 /* end footer */
 
 /*start style portfolio */
