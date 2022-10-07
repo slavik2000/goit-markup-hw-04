@@ -214,9 +214,9 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main-baner/Img\\(1\)-min.jpg);
+    url(../images/main-baner/Img\ \(1\)-min.jpg);
   padding-top: 200px;
-  padding-bottom: 200px;  
+  padding-bottom: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1600px;
@@ -248,7 +248,7 @@ img {
   display: block;
   padding: 10px 32px;
   border-radius: 4px;
-  border:none;  
+  border: none;
 }
 
 .main-button:hover,
@@ -416,9 +416,8 @@ img {
   /* padding: 16px; */
   width: 170px;
   height: 92px;
-  display: flex;  
+  display: flex;
   justify-content: center;
-
 }
 
 .partner-list {
@@ -431,20 +430,23 @@ img {
 .partner-list-icon use {
   fill: var(--color-svg);
 }
-.partner-list-icon{
-  fill: currentColor; 
-}
 
-.partner-list-icon use:hover,
-.partner-list-icon use:focus {
-  fill: var(--color-primary-hover);
-}
-
-.partner-list-link{
+.partner-list-link {  
   width: 100%;
   height: 100%;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.partner-list-link:hover .partner-list-icon use,
+.partner-list-link:focus .partner-list-icon use{
+fill: var(--color-primary-hover);
+}
+.partner-list-link:hover,
+.partner-list-link:focus{
+  border: 1px solid var(--color-primary-hover);
+}
+
 /* end main */
 
 /* start footer */
@@ -454,7 +456,7 @@ img {
   padding-bottom: 60px;
 }
 .footer .logo {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: block;
 }
 
@@ -500,6 +502,7 @@ img {
 
 .footer-list {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-item:not(:last-child) {
@@ -561,7 +564,7 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .content-portfolio {
@@ -586,10 +589,6 @@ img {
   margin-top: 30px;
   width: calc((100% - 90px) / 3);
 }
-.portfolio-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .portfolio-title {
   letter-spacing: 0.03em;
@@ -603,6 +602,15 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-color-link);
   font-weight: 400;
+}
+
+.portfolio-link{
+  display: block;
+}
+
+.portfolio-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-img {
